@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="general">
+		<field name="id"  type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0" 
+			readonly="true"  />
+
+		<field name="asset_id" type="hidden" filter="unset" />
+		<field name="search_form_id" type="hidden" />
+		
+		<field name="title" type="text" label="COM_FORM2CONTENTSEARCH_TITLE"
+			description="COM_FORM2CONTENTSEARCH_TITLE_DESC" class="inputbox" size="60" maxlength="200"
+			required="true" />
+			
+		<field name="description" type="editor" filter="raw" 
+			label="COM_FORM2CONTENTSEARCH_DATAVIEW_DESCRIPTION" description="COM_FORM2CONTENTSEARCH_DATAVIEW_DESCRIPTION_DESC"
+			buttons="true" />
+			
+		<field name="metatags" type="textarea" filter="raw" 
+			label="COM_FORM2CONTENTSEARCH_METATAGS" description="COM_FORM2CONTENTSEARCH_METATAGS_DESC"
+			class="inputbox" rows="10" cols="250" labelclass="control-label" />
+			
+	</fieldset>				
+</form>	

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id"  type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0" 
+			readonly="true"  />
+
+		<field name="search_form_fieldid" type="hidden" />
+		<field name="datavwid" type="hidden" />
+		<field name="fieldtypeid" type="hidden" />
+			 
+		<field name="script" type="textarea"
+			label="COM_FORM2CONTENTSEARCH_INTERVAL_SCRIPT" description="COM_FORM2CONTENTSEARCH_INTERVAL_SCRIPT_DESC"
+			class="inputbox required" rows="15" labelclass="control-label" filter="RAW" />
+				
+	</fieldset>	
+</form>	

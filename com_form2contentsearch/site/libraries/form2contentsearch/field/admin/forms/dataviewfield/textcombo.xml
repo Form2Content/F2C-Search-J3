@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id"  type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0" 
+			readonly="true"  />
+
+		<field name="search_form_fieldid" type="hidden" />
+		<field name="datavwid" type="hidden" />
+		<field name="fieldtypeid" type="hidden" />
+		
+		<field name="fld_textcombo" type="sql" label="COM_FORM2CONTENTSEARCH_VALUE" query="SELECT id, title FROM #__content" key_field="content" value_field="content" />
+	</fieldset>	
+</form>	

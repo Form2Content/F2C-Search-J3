@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="attribs" type="text" label="COM_FORM2CONTENTSEARCH_ATTRIBUTES"
+			description="COM_FORM2CONTENTSEARCH_ATTRIBUTES_DESC" class="inputbox" size="100" maxlength="100"
+			required="false" />
+
+		<field name="emptytext" type="text" label="COM_FORM2CONTENTSEARCH_EMPTYTEXT"
+			description="COM_FORM2CONTENTSEARCH_EMPTYTEXT_DESC" class="inputbox" size="100" maxlength="100"
+			required="false" />
+			
+		<field name="displaymode" type="list" label="COM_FORM2CONTENTSEARCH_DISPLAYMODE"
+			description="COM_FORM2CONTENTSEARCH_DISPLAYMODE_DESC" class="inputbox" default="0">
+			<option value="0">COM_FORM2CONTENTSEARCH_DROPDOWNLIST</option>
+			<option value="1">COM_FORM2CONTENTSEARCH_MULTISELECTLIST</option>
+		</field>
+
+		<fields name="settings">
+			<field name="txt_size" type="text" label="COM_FORM2CONTENTSEARCH_SIZE"
+				description="COM_FORM2CONTENTSEARCH_SIZE_DESC" class="inputbox" maxlength="5" size="7" />
+				
+			<field name="txt_max_length" type="text" label="COM_FORM2CONTENTSEARCH_MAXLENGTH"
+				description="COM_FORM2CONTENTSEARCH_MAXLENGTH_DESC" class="inputbox" maxlength="5" size="7" />
+
+			<field name="txt_fieldids" type="F2cMultiSelect" label="COM_FORM2CONTENTSEARCH_FREETEXT_FIELDS" description="COM_FORM2CONTENTSEARCH_FREETEXT_FIELDS_DESC" 
+				multiple="true" style="height: 250px;"/>
+		</fields>
+	</fieldset>	
+</form>	

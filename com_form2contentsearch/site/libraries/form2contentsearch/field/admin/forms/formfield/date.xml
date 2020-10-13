@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="attribs" type="text" label="COM_FORM2CONTENTSEARCH_ATTRIBUTES"
+			description="COM_FORM2CONTENTSEARCH_ATTRIBUTES_DESC" class="inputbox" size="100" maxlength="100"
+			required="false" />
+						
+		<fields name="settings">
+			<field name="date_format" type="text" label="COM_FORM2CONTENTSEARCH_DATE_FORMAT" default="dd-mm-yy"
+				description="COM_FORM2CONTENTSEARCH_DATE_FORMAT_DESC" class="inputbox" size="100" maxlength="100"
+				required="true" />		    
+			<field name="field1" type="sql" key_field="id" value_field="fieldname" default="" class="inputbox required">
+				<option value="">COM_FORM2CONTENTSEARCH_CONTENTTYPE_FIELD_SELECT</option>
+				<option value="created">JGLOBAL_CREATED_DATE</option>
+				<option value="modified">JGLOBAL_MODIFIED_DATE</option>
+				<option value="publish_up">JGLOBAL_FIELD_PUBLISH_UP_LABEL</option>
+				<option value="publish_down">JGLOBAL_FIELD_PUBLISH_DOWN_LABEL</option>
+			</field>
+			<field name="operator1" type="list" class="inputbox required" 
+			    label="COM_FORM2CONTENTSEARCH_FILTER_ONE"  description="COM_FORM2CONTENTSEARCH_FILTER_ONE_DESC">
+				<option value="LT">&lt;</option>
+				<option value="LTEQ">&lt;=</option>
+				<option value="EQ">=</option>
+				<option value="GT">&gt;</option>
+				<option value="GTEQ">&gt;=</option>            
+			</field>
+			<field name="include_null1" type="radio" default="0" label="COM_FORM2CONTENTSEARCH_INCLUDE_NULL" description="COM_FORM2CONTENTSEARCH_INCLUDE_NULL_DESC" class="btn-group">
+				<option	value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+			<field name="field2" type="sql" key_field="id" value_field="fieldname" default="" class="inputbox">
+				<option value="">COM_FORM2CONTENTSEARCH_CONTENTTYPE_FIELD_SELECT</option>
+				<option value="created">JGLOBAL_CREATED_DATE</option>
+				<option value="modified">JGLOBAL_MODIFIED_DATE</option>
+				<option value="publish_up">JGLOBAL_FIELD_PUBLISH_UP_LABEL</option>
+				<option value="publish_down">JGLOBAL_FIELD_PUBLISH_DOWN_LABEL</option>
+			</field>			
+			<field name="operator2" type="list" class="inputbox" default="" 
+			    label="COM_FORM2CONTENTSEARCH_FILTER_TWO"  description="COM_FORM2CONTENTSEARCH_FILTER_TWO_DESC">
+				<option value="LT">&lt;</option>
+				<option value="LTEQ">&lt;=</option>
+				<option value="EQ">=</option>
+				<option value="GT">&gt;</option>
+				<option value="GTEQ">&gt;=</option>            
+			</field>
+			<field name="include_null2" type="radio" default="0" label="COM_FORM2CONTENTSEARCH_INCLUDE_NULL" description="COM_FORM2CONTENTSEARCH_INCLUDE_NULL_DESC" class="btn-group">
+				<option	value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>			
+		</fields>
+	</fieldset>	
+</form>	

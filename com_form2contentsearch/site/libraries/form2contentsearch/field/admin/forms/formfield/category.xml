@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="attribs" type="text" label="COM_FORM2CONTENTSEARCH_ATTRIBUTES"
+			description="COM_FORM2CONTENTSEARCH_ATTRIBUTES_DESC" class="inputbox" size="100" maxlength="100"
+			required="false" />
+
+		<field name="emptytext" type="text" label="COM_FORM2CONTENTSEARCH_EMPTYTEXT"
+			description="COM_FORM2CONTENTSEARCH_EMPTYTEXT_DESC" class="inputbox" size="100" maxlength="100"
+			required="false" />
+			
+		<field name="displaymode" type="list" label="COM_FORM2CONTENTSEARCH_DISPLAYMODE"
+			description="COM_FORM2CONTENTSEARCH_DISPLAYMODE_DESC" class="inputbox" default="0">
+			<option value="0">COM_FORM2CONTENTSEARCH_DROPDOWNLIST</option>
+			<option value="1">COM_FORM2CONTENTSEARCH_MULTISELECTLIST</option>
+		</field>
+
+		<fields name="settings">
+		
+			<field name="cat_display" type="list" default="0" label="COM_FORM2CONTENTSEARCH_CATEGORIES_DISPLAY" description="COM_FORM2CONTENTSEARCH_CATEGORIES_DISPLAY_DESC">
+				<option	value="0">COM_FORM2CONTENTSEARCH_CATEGORIES_TREE_VIEW</option>
+				<option value="1">COM_FORM2CONTENTSEARCH_CATEGORIES_ALPHA_LIST</option>
+			</field>
+
+			<field name="cat_filter" type="list" label="COM_FORM2CONTENTSEARCH_DISPLAYCATEGORIES"
+				description="COM_FORM2CONTENTSEARCH_DISPLAYCATEGORIES_DESC" class="inputbox" default="0">
+				<option value="0">COM_FORM2CONTENTSEARCH_FILTER_SHOW_ALL</option>
+				<option value="1">COM_FORM2CONTENTSEARCH_FILTER_EXCLUDE</option>
+				<option value="2">COM_FORM2CONTENTSEARCH_FILTER_INCLUDE</option>
+			</field>
+				
+			<field name="cat_search_below" type="radio" default="0" label="COM_FORM2CONTENTSEARCH_CATEGORIES_SEARCH_BELOW" description="COM_FORM2CONTENTSEARCH_CATEGORIES_SEARCH_BELOW_DESC" class="btn-group">
+				<option	value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+				
+			<field name="cat_ids" type="Category" label="COM_FORM2CONTENTSEARCH_CATEGORIES" description="COM_FORM2CONTENTSEARCH_CATEGORIES" 
+				multiple="true" extension="com_content" style="height: 250px;" />
+
+		</fields>
+	</fieldset>	
+</form>	

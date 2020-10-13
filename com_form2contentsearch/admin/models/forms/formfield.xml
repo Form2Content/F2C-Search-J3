@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id"  type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0" 
+			readonly="true"  />
+
+		<field name="title" type="text" label="JGLOBAL_TITLE" description="JGLOBAL_TITLE" 
+			class="inputbox" size="60" maxlength="200" required="true" />
+				
+		<field name="formid" type="hidden" />
+		<field name="ordering" type="hidden" />
+		<field name="fieldtypeid" type="hidden" />
+		
+		<field name="caption" type="text" label="COM_FORM2CONTENTSEARCH_CAPTION"
+			description="COM_FORM2CONTENTSEARCH_CAPTION_DESC" class="inputbox" size="30" maxlength="100" 
+			required="false" />
+			
+		<field name="helptext" type="text" label="COM_FORM2CONTENTSEARCH_HELPTEXT"
+			description="COM_FORM2CONTENTSEARCH_HELPTEXT_DESC" class="inputbox" size="100" maxlength="100"
+			required="false" />			
+	</fieldset>	
+</form>	

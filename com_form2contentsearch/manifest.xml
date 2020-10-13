@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0.0" method="upgrade">
+	<name>com_form2contentsearch</name>
+    <creationDate>2020-05-21</creationDate>
+    <author>Open Source Design</author>
+    <authorEmail>info@opensourcedesign.nl</authorEmail>
+    <authorUrl>http://www.opensourcedesign.nl</authorUrl>
+    <copyright>(c) 2020 - Open Source Design</copyright>
+    <license>Commercial GPL (See http://www.form2content.com/faqs for more information)</license>
+    <version>6.7.1</version>
+    <description>A Form2content Search Component</description>
+    <scriptfile>script.php</scriptfile>
+ 	<install>
+    	<sql>
+       		<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+       		<file driver="mysql" charset="">sql/install.mysql.noutf8.sql</file>
+        </sql> 	
+	</install>
+	<uninstall>
+    	<sql>
+       		<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+       		<file driver="mysql" charset="">sql/uninstall.mysql.noutf8.sql</file>
+        </sql> 	
+	</uninstall>    
+    <files folder="site">
+    	<filename>class.form2contentsearch.php</filename>
+    	<filename>controller.php</filename>
+    	<filename>form2contentsearch.php</filename>
+    	<filename>index.html</filename>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>libraries</folder>
+		<folder>models</folder>
+		<folder>views</folder>    
+    </files>    
+	<languages folder="site">
+		<language tag="de-DE">language/de-DE/de-DE.com_form2contentsearch.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.com_form2contentsearch.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.com_form2contentsearch.ini</language>
+		<language tag="ru-RU">language/ru-RU/ru-RU.com_form2contentsearch.ini</language>
+	</languages>	
+	<media destination="com_form2contentsearch" folder="media">
+			<filename>index.html</filename>
+			<folder>css</folder>
+			<folder>images</folder>
+			<folder>js</folder>
+	</media>	
+ 	<administration>
+		<menu>com_form2contentsearch</menu>
+		<submenu>
+			<menu link="option=com_form2contentsearch&amp;view=forms" view="forms">COM_FORM2CONTENTSEARCH_FORMSMANAGER</menu>
+			<menu link="option=com_form2contentsearch&amp;view=datavws" view="datavws">COM_FORM2CONTENTSEARCH_DATAVIEWSMANAGER</menu>
+			<menu link="option=com_form2contentsearch&amp;view=about" view="about">COM_FORM2CONTENTSEARCH_ABOUT</menu>
+		</submenu>
+        <files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>form2contentsearch.php</filename>
+			<filename>index.html</filename>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>models</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>sql</folder>
+		</files>
+        <languages folder="admin">
+	        <language tag="de-DE">language/de-DE/de-DE.com_form2contentsearch.ini</language>
+	        <language tag="de-DE">language/de-DE/de-DE.com_form2contentsearch.sys.ini</language>
+	        <language tag="en-GB">language/en-GB/en-GB.com_form2contentsearch.ini</language>
+	        <language tag="en-GB">language/en-GB/en-GB.com_form2contentsearch.sys.ini</language>
+	        <language tag="nl-NL">language/nl-NL/nl-NL.com_form2contentsearch.ini</language>
+	        <language tag="nl-NL">language/nl-NL/nl-NL.com_form2contentsearch.sys.ini</language>
+	        <language tag="ru-RU">language/ru-RU/ru-RU.com_form2contentsearch.ini</language>
+	        <language tag="ru-RU">language/ru-RU/ru-RU.com_form2contentsearch.sys.ini</language>
+        </languages>		
+	</administration>
+	<updateservers>
+	   <server type="extension" priority="2" name="Form2content Search component">http://update.form2content.com/f2c_com_f2csearch_j30.xml</server>
+	</updateservers>			
+</extension>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_FORM2CONTENTSEARCH_DATAVIEW_DEFAULT_TITLE" option="COM_FORM2CONTENTSEARCH_DATAVIEW_DEFAULT_OPTION">
+		<message><![CDATA[COM_FORM2CONTENTSEARCH_DATAVIEW_DEFAULT_DESC]]></message>
+	</layout>
+	<fields name="params">
+		<fieldset name="basic">
+            <field name="datavw_id" type="sql" label="COM_FORM2CONTENTSEARCH_DATAVIEW" description="COM_FORM2CONTENTSEARCH_DATAVIEW_DESC"
+            	query="SELECT id, title FROM #__f2c_search_dataview ORDER BY title" key_field="id" value_field="title">
+            </field>
+	 		<field name="use_title_as_page_heading" type="radio" class="btn-group" label="COM_FORM2CONTENTSEARCH_USE_TITLE_AS_PAGE_HEADING" description="COM_FORM2CONTENTSEARCH_USE_TITLE_AS_PAGE_HEADING_DESC" default="0">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>  
+			<field name="text_before_item_count" type="text" label="COM_FORM2CONTENTSEARCH_TOTALS_PRE_TEXT_OVERRIDE"
+				description="COM_FORM2CONTENTSEARCH_TOTALS_PRE_TEXT_DESC_OVERRIDE" class="inputbox" size="60" maxlength="200"
+				required="false" />
+				
+			<field name="text_after_item_count" type="text" label="COM_FORM2CONTENTSEARCH_TOTALS_POST_TEXT_OVERRIDE"
+				description="COM_FORM2CONTENTSEARCH_TOTALS_POST_TEXT_DESC_OVERRIDE" class="inputbox" size="60" maxlength="200"
+				required="false" />s			          
+		</fieldset>
+	</fields>
+</metadata>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="general">
+		<field name="id"  type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0" 
+			readonly="true"  />
+
+		<field name="asset_id" type="hidden" filter="unset" />
+		<field name="projectid" type="hidden" />
+		
+		<field name="title" type="text" label="COM_FORM2CONTENTSEARCH_TITLE"
+			description="COM_FORM2CONTENTSEARCH_TITLE_DESC" class="inputbox" size="60" maxlength="200"
+			required="true" />
+			
+		<field name="num_cols" type="text" label="COM_FORM2CONTENTSEARCH_NUM_COLS"
+			description="COM_FORM2CONTENTSEARCH_NUM_COLS_DESC" class="inputbox" size="3" maxlength="2"
+			required="false" />
+			
+		<field name="mod_pre_text" type="text" label="COM_FORM2CONTENTSEARCH_MOD_PRE_TEXT"
+			description="COM_FORM2CONTENTSEARCH_MOD_PRE_TEXT_DESC" class="inputbox" size="60" maxlength="200"
+			required="false" />
+
+		<field name="totals_pre_text" type="text" label="COM_FORM2CONTENTSEARCH_TOTALS_PRE_TEXT"
+			description="COM_FORM2CONTENTSEARCH_TOTALS_PRE_TEXT_DESC" class="inputbox" size="60" maxlength="200"
+			required="false" />
+			
+		<field name="totals_post_text" type="text" label="COM_FORM2CONTENTSEARCH_TOTALS_POST_TEXT"
+			description="COM_FORM2CONTENTSEARCH_TOTALS_POST_TEXT_DESC" class="inputbox" size="60" maxlength="200"
+			required="false" />
+			
+		<field name="submit_pre_text" type="text" label="COM_FORM2CONTENTSEARCH_SUBMIT_PRE_TEXT"
+			description="COM_FORM2CONTENTSEARCH_SUBMIT_PRE_TEXT_DESC" class="inputbox" size="60" maxlength="200"
+			required="false" />
+			
+		<field name="submit_post_text" type="text" label="COM_FORM2CONTENTSEARCH_SUBMIT_POST_TEXT"
+			description="COM_FORM2CONTENTSEARCH_SUBMIT_POST_TEXT_DESC" class="inputbox" size="60" maxlength="200"
+			required="false" />
+			
+		<field name="submit_caption" type="text" label="COM_FORM2CONTENTSEARCH_SUBMIT_CAPTION"
+			description="COM_FORM2CONTENTSEARCH_SUBMIT_CAPTION_DESC" class="inputbox" size="30" maxlength="200"
+			required="false" />
+			
+		<field name="submit_class" type="text" label="COM_FORM2CONTENTSEARCH_SUBMIT_CLASS"
+			description="COM_FORM2CONTENTSEARCH_SUBMIT_CLASS_DESC" class="inputbox" size="30" maxlength="200"
+			required="false" />
+	</fieldset>
+	
+	<fields name="attribs">
+	
+		<field name="reset_caption" type="text" label="COM_FORM2CONTENTSEARCH_RESET_CAPTION"
+			description="COM_FORM2CONTENTSEARCH_RESET_CAPTION_DESC" class="inputbox" size="30" maxlength="200"
+			required="false" />
+			
+		<field name="reset_class" type="text" label="COM_FORM2CONTENTSEARCH_RESET_CLASS"
+			description="COM_FORM2CONTENTSEARCH_RESET_CLASS_DESC" class="inputbox" size="30" maxlength="200"
+			required="false" />
+	
+		<fieldset name="page-options" label="COM_FORM2CONTENTSEARCH_PAGE_OPTIONS" description="COM_FORM2CONTENTSEARCH_PAGE_OPTIONS">
+			<field name="page_title" type="text" label="COM_FORM2CONTENTSEARCH_ITEM_FIELD_PAGE_TITLE_LABEL" description="COM_FORM2CONTENTSEARCH_ITEM_FIELD_PAGE_TITLE_DESC" />
+			<field name="show_page_heading" type="radio" label="COM_FORM2CONTENTSEARCH_ITEM_FIELD_SHOW_PAGE_HEADING_LABEL"
+				description="COM_FORM2CONTENTSEARCH_ITEM_FIELD_SHOW_PAGE_HEADING_DESC" default="0" filter="integer" class="btn-group">
+				<option value="0" class="no">JNO</option>
+				<option value="1" class="yes">JYES</option>
+			</field>
+			<field name="page_heading" type="text" label="COM_FORM2CONTENTSEARCH_ITEM_FIELD_PAGE_HEADING_LABEL"	description="COM_FORM2CONTENTSEARCH_ITEM_FIELD_PAGE_HEADING_DESC" />
+			<field name="pageclass_sfx" type="text"	label="COM_FORM2CONTENTSEARCH_ITEM_FIELD_PAGE_CLASS_LABEL" description="COM_FORM2CONTENTSEARCH_ITEM_FIELD_PAGE_CLASS_DESC" />
+			<field name="page_subheading" type="text" description="JGLOBAL_SUBHEADING_DESC"	label="JGLOBAL_SUBHEADING_LABEL" size="20" />
+			<field name="show_item_count" type="radio" label="COM_FORM2CONTENTSEARCH_ITEM_FIELD_SHOW_ITEM_COUNT_LABEL"
+				description="COM_FORM2CONTENTSEARCH_ITEM_FIELD_SHOW_ITEM_COUNT_DESC" default="0" filter="integer" class="btn-group">
+				<option value="0" class="no">JNO</option>
+				<option value="1" class="yes">JYES</option>
+			</field>
+			<field name="text_before_item_count" type="text" label="COM_FORM2CONTENTSEARCH_ITEM_FIELD_TEXT_BEFORE_ITEM_COUNT" description="COM_FORM2CONTENTSEARCH_ITEM_FIELD_TEXT_BEFORE_ITEM_COUNT_DESC" />
+			<field name="text_after_item_count" type="text" label="COM_FORM2CONTENTSEARCH_ITEM_FIELD_TEXT_AFTER_ITEM_COUNT" description="COM_FORM2CONTENTSEARCH_ITEM_FIELD_TEXT_AFTER_ITEM_COUNT_DESC" />			
+			<field name="show_ordering" type="radio" label="COM_FORM2CONTENTSEARCH_ITEM_FIELD_SHOW_ORDERING_LABEL"
+				description="COM_FORM2CONTENTSEARCH_ITEM_FIELD_SHOW_ORDERING_DESC" default="1" filter="integer" class="btn-group">
+				<option value="0" class="no">JNO</option>
+				<option value="1" class="yes">JYES</option>
+			</field>
+			<field name="classic_layout" type="radio" default="0"
+				label="COM_FORM2CONTENTSEARCH_CLASSIC_LAYOUT"
+				description="COM_FORM2CONTENTSEARCH_CLASSIC_LAYOUT_DESC" class="btn-group">
+				<option value="1">JYES</option>
+				<option value="0">JNO</option>
+			</field>																		
+		</fieldset>
+		<fieldset name="advanced" label="JGLOBAL_BLOG_LAYOUT_OPTIONS" description="JGLOBAL_BLOG_LAYOUT_OPTIONS">
+			<field name="bloglayout" type="spacer" class="text"	label="JGLOBAL_SUBSLIDER_BLOG_LAYOUT_LABEL"	/>
+			<field name="num_leading_articles" type="text" description="JGLOBAL_NUM_LEADING_ARTICLES_DESC" label="JGLOBAL_NUM_LEADING_ARTICLES_LABEL" size="3" />
+			<field name="num_intro_articles" type="text" description="JGLOBAL_NUM_INTRO_ARTICLES_DESC" label="JGLOBAL_NUM_INTRO_ARTICLES_LABEL" size="3" />
+			<field name="num_columns" type="text" description="JGLOBAL_NUM_COLUMNS_DESC" label="JGLOBAL_NUM_COLUMNS_LABEL" size="3" />
+			<field name="num_links" type="text"	description="JGLOBAL_NUM_LINKS_DESC" label="JGLOBAL_NUM_LINKS_LABEL" size="3" />
+			<field name="multi_column_order" type="list" description="JGLOBAL_MULTI_COLUMN_ORDER_DESC" label="JGLOBAL_MULTI_COLUMN_ORDER_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JGLOBAL_DOWN</option>
+				<option value="1">JGLOBAL_ACROSS</option>
+			</field>
+			<field name="spacer1" type="spacer"	hr="true" />
+			<field name="orderby_sec" type="list" description="JGLOBAL_ARTICLE_ORDER_DESC" label="JGLOBAL_ARTICLE_ORDER_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="front">COM_FORM2CONTENTSEARCH_FEATURED_ORDER</option>
+				<option value="rdate">JGLOBAL_MOST_RECENT_FIRST</option>
+				<option value="date">JGLOBAL_OLDEST_FIRST</option>
+				<option value="alpha">JGLOBAL_TITLE_ALPHABETICAL</option>
+				<option value="ralpha">JGLOBAL_TITLE_REVERSE_ALPHABETICAL</option>
+				<option value="author">JGLOBAL_AUTHOR_ALPHABETICAL</option>
+				<option value="rauthor">JGLOBAL_AUTHOR_REVERSE_ALPHABETICAL</option>
+				<option value="hits">JGLOBAL_MOST_HITS</option>
+				<option value="rhits">JGLOBAL_LEAST_HITS</option>
+				<option value="order">JGLOBAL_ORDERING</option>
+			</field>
+			<field name="order_date" type="list" description="JGLOBAL_ORDERING_DATE_DESC" label="JGLOBAL_ORDERING_DATE_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="created">JGLOBAL_CREATED</option>
+				<option value="modified">JGLOBAL_MODIFIED</option>
+				<option value="published">JPUBLISHED</option>
+			</field>
+			<field name="show_pagination" type="list" description="JGLOBAL_PAGINATION_DESC" label="JGLOBAL_PAGINATION_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+				<option value="2">JGLOBAL_AUTO</option>
+			</field>
+			<field name="show_pagination_results" type="list" label="JGLOBAL_PAGINATION_RESULTS_LABEL" description="JGLOBAL_PAGINATION_RESULTS_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			<field name="spacer2" type="spacer"	hr="true" />
+			<field name="custom_ordering_label" type="spacer" class="text"	label="COM_FORM2CONTENTSEARCH_CUSTOM_ORDERING_SETTINGS"	/>
+			<field name="use_custom_ordering" type="radio" description="COM_FORM2CONTENTSEARCH_USE_CUSTOM_ORDERING" label="COM_FORM2CONTENTSEARCH_USE_CUSTOM_ORDERING" class="btn-group" default="0">
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>		
+			<field name="custom_ordering" type="textarea" description="COM_FORM2CONTENTSEARCH_CUSTOM_ORDERING_DESC"
+				label="COM_FORM2CONTENTSEARCH_CUSTOM_ORDERING" class="inputbox" rows="5" cols="30">
+			</field>
+			<field name="custom_ordering_default" type="text" description="COM_FORM2CONTENTSEARCH_CUSTOM_ORDERING_DEFAULT_DESC"
+				label="COM_FORM2CONTENTSEARCH_CUSTOM_ORDERING_DEFAULT" class="inputbox" size="70">
+			</field>			
+			<field name="custom_ordering_separator" type="text" description="COM_FORM2CONTENTSEARCH_ITEM_SEPARATOR_DESC"
+				label="COM_FORM2CONTENTSEARCH_ITEM_SEPARATOR" class="inputbox" size="70">
+			</field>			
+			<field name="alternate_sorting" type="radio" description="COM_FORM2CONTENTSEARCH_ALTERNATE_SORTING_DESC"
+				label="COM_FORM2CONTENTSEARCH_ALTERNATE_SORTING" class="btn-group" default="0">
+				<option value="0" class="no">JNO</option>
+				<option value="1" class="yes">JYES</option>				
+			</field>			
+		</fieldset>		
+		<fieldset name="article" label="COM_FORM2CONTENTSEARCH_ATTRIBS_FIELDSET_LABEL" description="COM_FORM2CONTENTSEARCH_ATTRIBS_FIELDSET_LABEL">
+			<field name="show_title" type="list" description="JGLOBAL_SHOW_TITLE_DESC" label="JGLOBAL_SHOW_TITLE_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			<field name="link_titles" type="list" description="JGLOBAL_LINKED_TITLES_DESC" label="JGLOBAL_LINKED_TITLES_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>		
+			<field name="show_intro" type="list" description="JGLOBAL_SHOW_INTRO_DESC" label="JGLOBAL_SHOW_INTRO_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>	
+			<field
+				name="info_block_position" type="list" default="" label="COM_CONTENT_FIELD_INFOBLOCK_POSITION_LABEL" description="COM_CONTENT_FIELD_INFOBLOCK_POSITION_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_CONTENT_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">COM_CONTENT_FIELD_OPTION_ABOVE</option>
+				<option value="1">COM_CONTENT_FIELD_OPTION_BELOW</option>
+				<option value="2">COM_CONTENT_FIELD_OPTION_SPLIT</option>
+			</field>
+			<field name="show_category" type="list"	description="JGLOBAL_SHOW_CATEGORY_DESC" label="JGLOBAL_SHOW_CATEGORY_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>		
+			<field name="link_category" type="list"	description="JGLOBAL_LINK_CATEGORY_DESC" label="JGLOBAL_LINK_CATEGORY_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>		
+			<field name="show_parent_category" type="list" description="JGLOBAL_SHOW_PARENT_CATEGORY_DESC" label="JGLOBAL_SHOW_PARENT_CATEGORY_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>		
+			<field name="link_parent_category" type="list" description="JGLOBAL_LINK_PARENT_CATEGORY_DESC"	label="JGLOBAL_LINK_PARENT_CATEGORY_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>		
+			<field name="show_author" type="list" description="JGLOBAL_SHOW_AUTHOR_DESC" label="JGLOBAL_SHOW_AUTHOR_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>		
+			<field name="link_author" type="list" description="JGLOBAL_LINK_AUTHOR_DESC" label="JGLOBAL_LINK_AUTHOR_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JNo</option>
+				<option value="1">JYes</option>
+			</field>		
+			<field name="show_create_date" type="list" description="JGLOBAL_SHOW_CREATE_DATE_DESC"	label="JGLOBAL_SHOW_CREATE_DATE_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>		
+			<field name="show_modify_date" type="list" description="JGLOBAL_SHOW_MODIFY_DATE_DESC"	label="JGLOBAL_SHOW_MODIFY_DATE_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>		
+			<field name="show_publish_date" type="list"	description="JGLOBAL_SHOW_PUBLISH_DATE_DESC" label="JGLOBAL_SHOW_PUBLISH_DATE_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			<field name="show_item_navigation" type="list" description="JGLOBAL_SHOW_NAVIGATION_DESC" label="JGLOBAL_SHOW_NAVIGATION_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			<field name="show_vote" type="list"	label="JGLOBAL_SHOW_VOTE_LABEL"	description="JGLOBAL_SHOW_VOTE_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JHIDE</option>
+				<option	value="1">JSHOW</option>
+			</field>		
+			<field name="show_readmore"	type="list"	description="JGLOBAL_SHOW_READMORE_DESC" label="JGLOBAL_SHOW_READMORE_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+			<field name="show_readmore_title" type="list"	label="JGLOBAL_SHOW_READMORE_TITLE_LABEL" description="JGLOBAL_SHOW_READMORE_TITLE_DESC">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>		
+			<field name="show_icons" type="list" description="JGLOBAL_SHOW_ICONS_DESC" label="JGLOBAL_SHOW_ICONS_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>		
+			<field name="show_print_icon" type="list" description="JGLOBAL_SHOW_PRINT_ICON_DESC" label="JGLOBAL_SHOW_PRINT_ICON_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>		
+			<field name="show_email_icon" type="list" description="JGLOBAL_Show_Email_Icon_Desc" label="JGLOBAL_Show_Email_Icon_Label">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>		
+			<field name="show_hits" type="list"	description="JGLOBAL_SHOW_HITS_DESC" label="JGLOBAL_SHOW_HITS_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>		
+			<field name="show_noauth" type="list" description="JGLOBAL_SHOW_UNAUTH_LINKS_DESC" label="JGLOBAL_SHOW_UNAUTH_LINKS_LABEL">
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="use_article">COM_FORM2CONTENTSEARCH_FIELD_VALUE_USE_ARTICLE_SETTINGS</option>
+				<option value="0">JNO</option>
+				<option value="1">JYES</option>
+			</field>
+		</fieldset>
+	</fields>	
+</form>	

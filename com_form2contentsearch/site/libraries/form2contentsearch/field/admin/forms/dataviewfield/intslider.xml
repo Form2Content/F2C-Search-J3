@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id"  type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0" 
+			readonly="true"  />
+
+		<field name="search_form_fieldid" type="hidden" />
+		<field name="datavwid" type="hidden" />
+		<field name="fieldtypeid" type="hidden" />
+		
+		<field name="sld_minval" type="text" label="COM_FORM2CONTENTSEARCH_SLIDER_MIN_VALUE"
+			description="COM_FORM2CONTENTSEARCH_SLIDER_MIN_VALUE_DESC" class="inputbox" size="25" />
+		<field name="sld_maxval" type="text" label="COM_FORM2CONTENTSEARCH_SLIDER_MAX_VALUE"
+			description="COM_FORM2CONTENTSEARCH_SLIDER_MAX_VALUE_DESC" class="inputbox" size="25" />
+	</fieldset>	
+</form>	

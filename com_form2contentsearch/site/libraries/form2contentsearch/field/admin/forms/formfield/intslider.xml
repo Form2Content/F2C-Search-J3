@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="fieldid" type="sql" label="COM_FORM2CONTENTSEARCH_CONTENTTYPE_FIELD" key_field="id" value_field="fieldname" 
+			description="COM_FORM2CONTENTSEARCH_CONTENTTYPE_FIELD_DESC" default="" class="inputbox required">
+			<option value="">COM_FORM2CONTENTSEARCH_CONTENTTYPE_FIELD_SELECT</option>
+		</field>		
+			
+		<field name="attribs" type="text" label="COM_FORM2CONTENTSEARCH_ATTRIBUTES"
+			description="COM_FORM2CONTENTSEARCH_ATTRIBUTES_DESC" class="inputbox" size="100" maxlength="100"
+			required="false" />
+
+		<field name="emptytext" type="text" label="COM_FORM2CONTENTSEARCH_EMPTYTEXT"
+			description="COM_FORM2CONTENTSEARCH_EMPTYTEXT_DESC" class="inputbox" size="100" maxlength="100"
+			required="false" />
+			
+		<field name="displaymode" type="list" label="COM_FORM2CONTENTSEARCH_DISPLAYMODE"
+			description="COM_FORM2CONTENTSEARCH_DISPLAYMODE_DESC" class="inputbox" default="0">
+			<option value="0">COM_FORM2CONTENTSEARCH_DROPDOWNLIST</option>
+			<option value="1">COM_FORM2CONTENTSEARCH_MULTISELECTLIST</option>
+		</field>
+
+		<fields name="settings">
+			<field name="isl_min_value" type="text" label="COM_FORM2CONTENTSEARCH_SLIDER_MIN_VALUE"
+				description="COM_FORM2CONTENTSEARCH_SLIDER_MIN_VALUE_DESC" class="inputbox" maxlength="10" size="9" required="true" />
+
+			<field name="isl_max_value" type="text" label="COM_FORM2CONTENTSEARCH_SLIDER_MAX_VALUE"
+				description="COM_FORM2CONTENTSEARCH_SLIDER_MAX_VALUE_DESC" class="inputbox" maxlength="10" size="9" required="true" />
+
+			<field name="isl_num_steps" type="text" label="COM_FORM2CONTENTSEARCH_SLIDER_NUM_STEPS"
+				description="COM_FORM2CONTENTSEARCH_SLIDER_NUM_STEPS_DESC" class="inputbox" maxlength="2" size="2" />
+
+			<field name="isl_width" type="text" label="COM_FORM2CONTENTSEARCH_SLIDER_WIDTH"
+				description="COM_FORM2CONTENTSEARCH_SLIDER_WIDTH_DESC" class="inputbox" size="3" required="true" />
+				
+		</fields>
+	</fieldset>	
+</form>	

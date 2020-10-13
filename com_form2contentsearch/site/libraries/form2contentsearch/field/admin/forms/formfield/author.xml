@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="attribs" type="text" label="COM_FORM2CONTENTSEARCH_ATTRIBUTES"
+			description="COM_FORM2CONTENTSEARCH_ATTRIBUTES_DESC" class="inputbox" size="100" maxlength="100"
+			required="false" />
+
+		<field name="emptytext" type="text" label="COM_FORM2CONTENTSEARCH_EMPTYTEXT"
+			description="COM_FORM2CONTENTSEARCH_EMPTYTEXT_DESC" class="inputbox" size="100" maxlength="100"
+			required="false" />
+			
+		<field name="displaymode" type="list" label="COM_FORM2CONTENTSEARCH_DISPLAYMODE"
+			description="COM_FORM2CONTENTSEARCH_DISPLAYMODE_DESC" class="inputbox" default="0">
+			<option value="0">COM_FORM2CONTENTSEARCH_DROPDOWNLIST</option>
+			<option value="1">COM_FORM2CONTENTSEARCH_MULTISELECTLIST</option>
+		</field>
+
+		<fields name="settings">
+		
+			<field name="aut_display_name" type="list" label="COM_FORM2CONTENTSEARCH_DISPLAYAUTHORSNAME"
+				description="COM_FORM2CONTENTSEARCH_DISPLAYAUTHORSNAME_DESC" class="inputbox" default="0">
+				<option value="0">COM_FORM2CONTENTSEARCH_AUTHOR_FULLNAME</option>
+				<option value="1">COM_FORM2CONTENTSEARCH_AUTHOR_USERNAME</option>
+			</field>
+		
+			<field name="aut_filter" type="list" label="COM_FORM2CONTENTSEARCH_DISPLAYAUTHORS"
+				description="COM_FORM2CONTENTSEARCH_DISPLAYAUTHORS_DESC" class="inputbox" default="0">
+				<option value="0">COM_FORM2CONTENTSEARCH_FILTER_SHOW_ALL</option>
+				<option value="1">COM_FORM2CONTENTSEARCH_FILTER_EXCLUDE</option>
+				<option value="2">COM_FORM2CONTENTSEARCH_FILTER_INCLUDE</option>
+			</field>
+		
+			<field name="aut_ids" type="F2cMultiSelect" label="COM_FORM2CONTENTSEARCH_AUTHORS" description="COM_FORM2CONTENTSEARCH_AUTHORS" 
+				multiple="true" style="height: 250px;" />
+		</fields>
+	</fieldset>	
+</form>	

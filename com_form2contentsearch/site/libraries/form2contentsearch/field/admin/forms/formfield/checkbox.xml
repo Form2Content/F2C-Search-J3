@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="fieldid" type="sql" label="COM_FORM2CONTENTSEARCH_CONTENTTYPE_FIELD" key_field="id" value_field="fieldname" 
+			description="COM_FORM2CONTENTSEARCH_CONTENTTYPE_FIELD_DESC" default="" class="inputbox required">
+			<option value="">COM_FORM2CONTENTSEARCH_CONTENTTYPE_FIELD_SELECT</option>
+		</field>
+			
+		<field name="attribs" type="text" label="COM_FORM2CONTENTSEARCH_ATTRIBUTES"
+			description="COM_FORM2CONTENTSEARCH_ATTRIBUTES_DESC" class="inputbox" size="100" maxlength="100"
+			required="false" />
+
+		<field name="emptytext" type="text" label="COM_FORM2CONTENTSEARCH_EMPTYTEXT"
+			description="COM_FORM2CONTENTSEARCH_EMPTYTEXT_DESC" class="inputbox" size="100" maxlength="100"
+			required="false" />
+			
+		<field name="displaymode" type="list" label="COM_FORM2CONTENTSEARCH_DISPLAYMODE"
+			description="COM_FORM2CONTENTSEARCH_DISPLAYMODE_DESC" class="inputbox" default="0">
+			<option value="0">COM_FORM2CONTENTSEARCH_DROPDOWNLIST</option>
+			<option value="1">COM_FORM2CONTENTSEARCH_MULTISELECTLIST</option>
+			<option value="2">COM_FORM2CONTENTSEARCH_CHECKBOX</option>
+		</field>
+
+		<fields name="settings">		
+		</fields>
+	</fieldset>	
+</form>	

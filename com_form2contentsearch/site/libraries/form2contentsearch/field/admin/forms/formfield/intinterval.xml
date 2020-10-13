@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="attribs" type="text" label="COM_FORM2CONTENTSEARCH_ATTRIBUTES"
+			description="COM_FORM2CONTENTSEARCH_ATTRIBUTES_DESC" class="inputbox" size="100" maxlength="100"
+			required="false" />
+						
+		<field name="emptytext" type="text" label="COM_FORM2CONTENTSEARCH_EMPTYTEXT"
+			description="COM_FORM2CONTENTSEARCH_EMPTYTEXT_DESC" class="inputbox" size="100" maxlength="100"
+			required="false" />
+				
+		<fields name="settings">
+			<field name="field" type="sql" key_field="id" value_field="fieldname" default="" class="inputbox required" 
+			    label="COM_FORM2CONTENTSEARCH_CONTENTTYPE_FIELD" description="COM_FORM2CONTENTSEARCH_CONTENTTYPE_FIELD_DESC">
+			</field>			
+			<field name="script" type="textarea"
+				label="COM_FORM2CONTENTSEARCH_INTERVAL_SCRIPT" description="COM_FORM2CONTENTSEARCH_INT_INTERVAL_SCRIPT_DESC"
+				class="inputbox required" filter="RAW" rows="16" labelclass="control-label" />
+							
+		</fields>
+	</fieldset>	
+</form>	

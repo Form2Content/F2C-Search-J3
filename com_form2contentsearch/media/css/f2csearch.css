@@ -1,0 +1,31 @@
+#f2c_search_custom_ordering 
+{
+	float:right;
+}
+
+#f2c_search_custom_ordering ul
+{
+	list-style-type: none;
+}
+
+#f2c_search_custom_ordering ul li
+{
+	display: inline;
+}
+
+.f2csearchresults div.container
+{
+	overflow: hidden; width: 100%;
+}
+
+.f2csearchresults div.left
+{
+    width: 45%;
+    float: left;
+}
+
+.f2csearchresults div.right
+{
+    width: 45%;
+    float: right;
+} 
